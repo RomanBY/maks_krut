@@ -1,0 +1,8 @@
+
+@import url(blocks/slider.css);
+@import url(blocks/nav_block.css);
+
+body{
+    margin: 0;
+    padding: 0;
+}
