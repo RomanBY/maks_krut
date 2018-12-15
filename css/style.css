@@ -1,11 +1,14 @@
 
 @import url(blocks/slider.css);
 @import url(blocks/nav_block.css);
+@import url(blocks/about_block.css);
+
 
 body{
     margin: 0;
     padding: 0;
     font-family: Avian;
+    color: white;
 }
 header{
 
