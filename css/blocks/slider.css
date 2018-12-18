@@ -1,6 +1,5 @@
 .header__slider{
-    overflow: hidden;
-    max-height: 810px;
+    /*max-height: 810px;*/
 }
 .slider__img{
     animation: slide 10s infinite ease-in-out;
@@ -53,4 +52,29 @@
 }
 .slider__promo h1{
     font-size: 60px;
+}
+.slider__text-p{
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.slider__indicators{
+    bottom: -70px;
+}
+.slider__indicator{
+    width: 140px !important;
+    height: 140px !important;
+    border-radius: 100px;
+    display: flex;
+    overflow: hidden;
+    transition: 300ms;
+}
+.slider__indicator:hover{
+    box-shadow: 1px 0 6px 0 #e0e0e0;
+}
+.slider__indicator img{
+    height: inherit;
+}
+.carousel__inner{
+    max-height: 810px;
 }

@@ -31,11 +31,40 @@
     display: block;
     content: "";
     height: 3px;
-    width: 0%;
+    width: 0;
     background-color: white;
     transition: width .4s ease-in-out;
 }
-.nav__text-a:hover:after,
-.nav__text-a:focus:after {
+.nav__text-a:hover:after{
     width: 100%;
+}
+.dropdown-toggle:after{
+     margin-left: 0;
+     border-top: 0;
+     border-right: 0;
+     border-bottom: 0;
+     border-left: 0;
+}
+.nav__drdw-menu{
+    background: #1d1d1d;
+    left: -13px;
+    transition: 400ms linear;
+    opacity: 0;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    z-index: 100;
+}
+.nav__drdw-menu.show{
+    opacity: 1;
+    max-height: 155px;
+}
+.nav__drop-text{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 200ms;
+}
+.nav__drop-text:hover{
+    color: #747474 !important;
 }

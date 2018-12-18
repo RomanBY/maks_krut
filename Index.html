@@ -16,23 +16,27 @@
 
 <header class="position-relative">
     <div class="nav__container w-100">
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand nav__text-name text-white" href="#">Maks Krut</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1"
-                    aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon menu-toggle"></span>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand text-white nav__text-name" href="#">Maks Krut</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item pr-lg-2 pr-lg-2 pr-xl-4">
-                        <a class="nav-link text-white nav__text-a-active" href="#">MAIN PAGE</a>
+                        <a class="nav-link text-white nav__text-a-active" href="#">MAIN PAGE<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item pr-lg-2 pr-lg-2 pr-xl-4">
                         <a class="nav-link text-white nav__text-a" href="#">ABOUT</a>
                     </li>
-                    <li class="nav-item pr-lg-2 pr-lg-2 pr-xl-4">
-                        <a class="nav-link text-white nav__text-a" href="#">PORTFOLIO</a>
+                    <li class="nav-item pr-lg-2 pr-lg-2 pr-xl-4 dropdown">
+                        <a class="nav-link text-white nav__text-a dropdown-toggle " href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
+                        <div class="dropdown-menu nav__drdw-menu" aria-labelledby="navbarDropdown1">
+                            <div><a class="nav__drop-text nav-link text-white text-center" href="#">Action</a></div>
+                            <div><a class="nav__drop-text nav-link text-white text-center" href="#">Another</a></div>
+                            <div><a class="nav__drop-text nav-link text-white text-center" href="#">Something</a></div>
+                        </div>
                     </li>
                     <li class="nav-item pr-lg-2 pr-lg-2 pr-xl-4">
                         <a class="nav-link text-white nav__text-a" href="#">EXPERIENCE</a>
@@ -44,19 +48,27 @@
             </div>
         </nav>
     </div>
-    <div id="carouselExampleFade" class="carousel slide carousel-fade header__slider w-100" data-ride="carousel" data-pause="false">
-        <div class="flex-column text-center m-auto justify-content-center slider__promo w-50 pb-lg-5 pb-md-3">
-            <h5 class="w-75 m-auto pb-md-5">WELCOME TO</h5>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade header__slider w-100" data-ride="carousel"
+         data-pause="false">
+        <div class="flex-column text-center m-auto justify-content-center slider__promo w-75 pb-lg-5 pb-md-3">
+            <h4 class="w-75 m-auto pb-md-5">WELCOME TO</h4>
             <h1 class="w-75 m-auto pt-xl-5">PHOTOGRAPHER'S PORTFOLIO</h1>
-            <p class="w-75 m-auto pt-lg-5 ">A separate kind of photo art, that requires incredible skill of the photographer,
-            it is a portrait photographer.</p>
+            <p class="w-75 m-auto pt-lg-5 slider__text-p">A separate kind of photo art, that requires incredible skill of the
+                photographer,
+                it is a portrait photographer.</p>
         </div>
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <ol class="carousel-indicators slider__indicators mb-0">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="slider__indicator ml-3 mr-3 active">
+                <img src="./img/slider/1.jpg" alt="img">
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="slider__indicator ml-3 mr-3">
+                <img src="./img/slider/2.jpg" alt="img">
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="slider__indicator ml-3 mr-3">
+                <img src="./img/slider/3.jpg" alt="img">
+            </li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner carousel__inner">
             <div class="carousel-item active">
                 <img class="d-block slider__img w-100" src="./img/slider/1.jpg" alt="First slide">
             </div>
@@ -67,11 +79,13 @@
                 <img class="d-block slider__img w-100" src="./img/slider/3.jpg" alt="Third slide">
             </div>
         </div>
-        <a class="carousel-control-prev slider__control-left" href="#carouselExampleFade" role="button" data-slide="prev">
+        <a class="carousel-control-prev slider__control-left" href="#carouselExampleIndicators" role="button"
+           data-slide="prev">
             <span class="carousel-control-prev-icon d-none" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next slider__control-right" href="#carouselExampleFade" role="button" data-slide="next">
+        <a class="carousel-control-next slider__control-right" href="#carouselExampleIndicators" role="button"
+           data-slide="next">
             <span class="carousel-control-next-icon d-none" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -80,11 +94,25 @@
 <main>
     <div class="about text-center">
         <div class="container">
-            <h3>SHORTLY ABOUT ME</h3>
-            <p>My name is Liam Chandler. I am a professional photographer with years of experience. I use state-of-the-art
-                equipment to ensure the highest quality of my works. I want to share them with the audience and show my vision
-                of the whole world. I'm passionate about capturing special moments and emphasizing the beauty of the virgin nature.</p>
-            <a href="#" class="btn">MORE</a>
+            <div class="row about">
+                <div class="col-12 mt-5 about__text-h3 pt-5">
+                    <h3>SHORTLY ABOUT ME</h3>
+                </div>
+                <div class="col-12 about__text-p">
+                    <p>My name is Liam Chandler. I am a professional photographer with years of
+                    experience. I use
+                    state-of-the-art
+                    equipment to ensure the highest quality of my works. I want to share them with the audience and show
+                    my vision
+                    of the whole world. I'm passionate about capturing special moments and emphasizing the beauty of the
+                    virgin nature.</p>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="">
+                        <button type="button" class="btn btn-primary about__btn">MORE</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </main>
