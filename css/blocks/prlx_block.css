@@ -1,0 +1,35 @@
+.prlx_cont{
+    position: relative;
+    overflow: hidden;
+}
+.prlx{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    margin: auto;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prlx img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /*height: 100%;*/
+}
+.prlx__text-h3{
+    font-size: 26px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.prlx__text-p{
+    line-height: 35px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}

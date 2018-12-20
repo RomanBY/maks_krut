@@ -40,7 +40,7 @@
 .slider__promo{
     position: absolute;
     right: 0;
-    bottom: 96px;
+    top: 330px;
     left: 0;
     z-index: 15;
     display: -ms-flexbox;
@@ -77,4 +77,5 @@
 }
 .carousel__inner{
     max-height: 810px;
+    transition: 2000ms ease-in-out;
 }
