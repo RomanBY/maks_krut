@@ -1,0 +1,26 @@
+.gallery__block-wrap1{
+    min-width: 45%;
+    overflow: hidden;
+}
+.gallery__block-wrap2{
+    min-width: 55%;
+    overflow: hidden;
+}
+.gallery__photo-hover{
+    top: 0;
+    left: 0;
+    transition: 300ms;
+}
+.gallery__photo-hover i{
+    background: #000000c7;
+    padding: 24px;
+    border-radius: 100px;
+    transform: scale(0);
+    transition: 200ms;
+}
+.gallery__photo-hover:hover{
+    background: rgba(0, 0, 0, 0.51);
+}
+.gallery__photo-hover:hover i{
+    transform: scale(1);
+}
