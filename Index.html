@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Maks Krut</title>
 
@@ -41,9 +41,9 @@
                             <div><a class="nav__drop-text nav-link text-white text-center" href="#">Something</a></div>
                         </div>
                     </li>
-                    <li class="nav-item pr-lg-2 pr-lg-2 pr-xl-4">
+                    <!--<li class="nav-item pr-lg-2 pr-lg-2 pr-xl-4">
                         <a class="nav-link text-white nav__text-a" href="#">EXPERIENCE</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item pr-lg-2 pr-lg-2 pr-xl-4">
                         <a class="nav-link text-white nav__text-a" href="#">CONTACT</a>
                     </li>
@@ -271,7 +271,7 @@
                 <div class="col-6 p-0 m-0">
                     <div class="col-12 p-0 m-0 h-50 position-relative">
                         <a class="" href="./img/gallery/1.jpg" data-fancybox="images">
-                            <img class="h-100" src="./img/gallery/1.jpg"/>
+                            <img class="w-100" src="./img/gallery/small_img/1.jpg"/>
                             <div class="gallery__photo-hover position-absolute w-100 h-100 d-flex">
                                 <i class="fa fa-search fa-2x text-success m-auto"></i>
                             </div>
@@ -279,7 +279,7 @@
                     </div>
                     <div class="col-12 p-0 m-0 h-50 position-relative">
                         <a class="" href="./img/gallery/2.jpg" data-fancybox="images">
-                            <img class="h-100" src="./img/gallery/2.jpg"/>
+                            <img class="w-100" src="./img/gallery/small_img/2.jpg"/>
                             <div class="gallery__photo-hover position-absolute w-100 h-100 d-flex">
                                 <i class="fa fa-search fa-2x text-success m-auto"></i>
                             </div>
@@ -288,7 +288,7 @@
                 </div>
                 <div class="col-6 p-0 m-0 h-100 position-relative">
                     <a class="" href="./img/gallery/3.jpg" data-fancybox="images">
-                        <img class="h-100" src="./img/gallery/3.jpg"/>
+                        <img class="w-100" src="./img/gallery/small_img/3.jpg"/>
                         <div class="gallery__photo-hover position-absolute w-100 h-100 d-flex">
                             <i class="fa fa-search fa-2x text-success m-auto"></i>
                         </div>
@@ -299,7 +299,7 @@
                 <div class="col-12 p-0 m-0 h-50 d-flex">
                     <div class="col-5 p-0 m-0 h-100 position-relative">
                         <a class="" href="./img/gallery/4.jpg" data-fancybox="images">
-                            <img class="h-100" src="./img/gallery/4.jpg"/>
+                            <img class="w-100" src="./img/gallery/small_img/4.jpg"/>
                             <div class="gallery__photo-hover position-absolute w-100 h-100 d-flex">
                                 <i class="fa fa-search fa-2x text-success m-auto"></i>
                             </div>
@@ -307,7 +307,7 @@
                     </div>
                     <div class="col-7 p-0 m-0 h-100 position-relative">
                         <a class="" href="./img/gallery/5.jpg" data-fancybox="images">
-                            <img class="h-100" src="./img/gallery/5.jpg"/>
+                            <img class="w-100" src="./img/gallery/small_img/5.jpg"/>
                             <div class="gallery__photo-hover position-absolute w-100 h-100 d-flex">
                                 <i class="fa fa-search fa-2x text-success m-auto"></i>
                             </div>
@@ -317,7 +317,7 @@
                 <div class="col-12 p-0 m-0 h-50 d-flex">
                     <div class="col-7 p-0 m-0 h-100 position-relative">
                         <a class="" href="./img/gallery/6.jpg" data-fancybox="images">
-                            <img class=" h-100" src="./img/gallery/6.jpg"/>
+                            <img class=" w-100" src="./img/gallery/small_img/6.jpg"/>
                             <div class="gallery__photo-hover position-absolute w-100 h-100 d-flex">
                                 <i class="fa fa-search fa-2x text-success m-auto"></i>
                             </div>
@@ -325,7 +325,7 @@
                     </div>
                     <div class="col-5 p-0 m-0 h-100 position-relative">
                         <a class="" href="./img/gallery/7.jpg" data-fancybox="images">
-                            <img class="h-100" src="./img/gallery/7.jpg"/>
+                            <img class="w-100" src="./img/gallery/small_img/7.jpg"/>
                             <div class="gallery__photo-hover position-absolute w-100 h-100 d-flex">
                                 <i class="fa fa-search fa-2x text-success m-auto"></i>
                             </div>
@@ -335,14 +335,80 @@
             </div>
         </div>
     </div>
+    <div class="feedback">
+        <div class="container">
+            <div class="row flex-column align-self-center feedback">
+                <div class="col-xl-6 col-lg-8 col-md-10  m-auto justify-content-center text-center pt-5">
+                    <h3 id="feedbackForm" class="about__text-h">Need a Foto</h3>
+                    <p class="info__text-p pb-4">Let us know what you're looking for in an agency. We'll take a look
+                        and see if this could be the start of something beautiful.</p>
+                </div>
+                <form class="col-xl-8 col-lg-10 col-md-12 m-auto justify-content-center text-center d-flex flex-wrap pb-5">
+                    <div class="col-xl-5 col-sm-5 col-10">
+                        <input type="email" class="form-control formEmail" id="exampleInputEmail1"
+                               aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="col-xl-5 col-sm-5 col-10 form-group">
+                        <input type="text" class="form-control formNumber" id="exampleInputNumber"
+                               placeholder="Your phone number">
+                    </div>
+                    <div class="col-10 form-group">
+                        <input type="text" class="form-control formName" id="exampleInputName" placeholder="Your Name">
+                    </div>
+                    <div class="col-10 form-group">
+                        <input type="text" class="form-control formControl" id="exampleInputComment"
+                               placeholder="Your Comment">
+                    </div>
+                    <button type="submit" class="btn btn-primary experience__btn formButton">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </main>
-<footer></footer>
-
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-4 d-flex footer__block">
+                    <p class="m-auto">Creator <a href="#">Roman Vasilkovsky</a></p>
+                </div>
+                <div class="col-4 d-flex justify-content-center flex-nowrap footer__block">
+                    <a class="m-auto d-flex" href="#">
+                        <div class="footer__block-contact bg-white m-auto d-flex">
+                            <div class="m-auto ">
+                                <i class="fa fa-instagram fa-2x"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="m-auto d-flex" href="#">
+                        <div class="footer__block-contact bg-white m-auto d-flex">
+                            <div class="m-auto">
+                                <i class="fa fa-vk fa-2x"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="m-auto d-flex" href="#">
+                        <div class="footer__block-contact bg-white m-auto d-flex">
+                            <div class="m-auto">
+                                <i class="fa fa-github fa-2x"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 d-flex footer__block">
+                    <p class="m-auto">© 2019 | PRIVACY POLICY</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
 <script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
 <script src="node_modules/rellax/rellax.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="dist/bundle.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

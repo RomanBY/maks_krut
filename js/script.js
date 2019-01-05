@@ -3,7 +3,7 @@ $(document).ready(function () {
     var screenHeight = screen.height;
     var sliderHeight = screenHeight - 150;
     var mainText = screenHeight/3;
-    console.log(sliderHeight)
+    console.log('height screen', sliderHeight)
     $('.carousel__inner').css('max-height', sliderHeight);
 
     /*main text*/
@@ -13,3 +13,8 @@ $(document).ready(function () {
 /*
 parallax*/
 var rellax = new Rellax('.prlx');
+
+/*input phone number*/
+$(function(){
+    $("#exampleInputNumber").mask("+375(99) 999-99-99");
+});

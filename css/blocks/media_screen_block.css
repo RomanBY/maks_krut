@@ -1,0 +1,22 @@
+@media screen and (max-width: 1810px) {
+    .gallery{
+        max-height: 700px !important;
+    }
+}
+@media screen and (max-width: 1420px) {
+    .gallery{
+        max-height: 550px !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .gallery{
+        max-height: 450px !important;
+    }
+    .prlx img{
+        top: 145px;
+        width: 110%;
+    }
+    .parallax {
+        min-height: 525px;
+    }
+}

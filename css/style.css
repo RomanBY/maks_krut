@@ -6,6 +6,12 @@
 @import url(blocks/info_block.css);
 @import url(blocks/prlx_block.css);
 @import url(blocks/gallery_block.css);
+@import url(blocks/feedback_block.css);
+@import url(blocks/footer_block.css);
+
+@import url(blocks/media_screen_block.css);
+
+
 
 body{
     margin: 0;
@@ -31,7 +37,14 @@ header{
     min-height: 600px;
 }
 .gallery{
-    max-height: 600px;
+    max-height: 900px;
     width: 100%;
+    background: #1d1d1d;
+}
+.feedback{
+    min-height: 600px;
+}
+.footer{
+    min-height: 80px;
     background: #1d1d1d;
 }

@@ -1,0 +1,24 @@
+#exampleInputComment{
+    min-height: 150px;
+    padding-bottom: 122px;
+}
+.formEmail{
+    position: relative;
+    opacity: 1;
+}
+.formNumber{
+    position: relative;
+    opacity: 1;
+}
+.formName{
+    position: relative;
+    opacity: 1;
+}
+.formControl{
+    position: relative;
+    opacity: 1;
+}
+.formButton{
+    position: relative;
+    opacity: 1;
+}
