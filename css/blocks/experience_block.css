@@ -13,10 +13,21 @@
 }
 .experience__blocks{
     min-height: 700px;
+    overflow: hidden;
 }
 .experience__block{
     min-height: 250px;
     border: 1px solid rgba(156, 156, 156, 0.58);
+}
+.experience__block1,
+.experience__block3 {
+    left: -400px;
+    opacity: 0;
+}
+.experience__block2,
+.experience__block4 {
+    left: 400px;
+    opacity: 0;
 }
 .fa{
     color: black;

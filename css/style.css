@@ -8,6 +8,7 @@
 @import url(blocks/gallery_block.css);
 @import url(blocks/feedback_block.css);
 @import url(blocks/footer_block.css);
+@import url(blocks/up-btn_block.css);
 
 @import url(blocks/media_screen_block.css);
 
@@ -32,6 +33,7 @@ header{
 .info{
     background: #1d1d1d;
     min-height: 490px;
+    overflow: hidden;
 }
 .parallax{
     min-height: 600px;
@@ -43,6 +45,7 @@ header{
 }
 .feedback{
     min-height: 600px;
+    overflow: hidden;
 }
 .footer{
     min-height: 80px;

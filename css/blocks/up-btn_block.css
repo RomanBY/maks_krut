@@ -1,0 +1,25 @@
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    transition: background-color 200ms;
+}
+#go-top:hover {
+    background-color: #1edaa4;
+}
+
+#go-top:before{
+    content: '\f106';
+    font-family: FontAwesome;
+    font-size: 57px;
+    position: relative;
+    top: -20px;
+    right: -6px;
+    color: #ffffff;
+}

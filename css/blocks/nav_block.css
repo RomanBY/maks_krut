@@ -69,3 +69,10 @@
 .nav__drop-text:hover{
     color: #747474 !important;
 }
+.nav__text-a-simbol-hover{
+    opacity: 0;
+    transition: 200ms;
+}
+.nav__text-a-simbol:hover .nav__text-a-simbol-hover{
+    opacity: 1;
+}
