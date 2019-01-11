@@ -68,6 +68,9 @@
     display: flex;
     overflow: hidden;
     transition: 300ms;
+    opacity: 1 !important;
+    border-top: none !important;
+    border-bottom: none !important;
 }
 .slider__indicator:hover{
     box-shadow: 1px 0 6px 0 #e0e0e0;

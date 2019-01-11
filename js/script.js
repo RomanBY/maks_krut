@@ -52,10 +52,10 @@ $(function() {
 /*animate on scroll EXPERIENCE*/
 
 $(document).ready(function () {
-    expBlock1 = ($('.experience__block1').offset().top) - 800;
-    expBlock2 = ($('.experience__block2').offset().top) - 800;
-    expBlock3 = ($('.experience__block3').offset().top) - 800;
-    expBlock4 = ($('.experience__block4').offset().top) - 800;
+    expBlock1 = ($('.experience__block1').offset().top) - 600;
+    expBlock2 = ($('.experience__block2').offset().top) - 600;
+    expBlock3 = ($('.experience__block3').offset().top) - 600;
+    expBlock4 = ($('.experience__block4').offset().top) - 600;
 
     console.log(expBlock1, expBlock2, expBlock3,expBlock4);
 
@@ -64,28 +64,28 @@ $(document).ready(function () {
 $(document).scroll(function () {
     if ($(window).scrollTop() >= expBlock1){
 
-        $('.experience__block1').delay(100).animate({
+        $('.experience__block1').delay(300).animate({
                 opacity: 1,
                 left: 0
             }, 'slow'
         )}
     if ($(window).scrollTop() >= expBlock2){
 
-        $('.experience__block2').delay(100).animate({
+        $('.experience__block2').delay(300).animate({
                 opacity: 1,
                 left: 0
             }, 'slow'
         )}
     if ($(window).scrollTop() >= expBlock3){
 
-        $('.experience__block3').delay(400).animate({
+        $('.experience__block3').delay(500).animate({
                 opacity: 1,
                 left: 0
             }, 'slow'
         )}
     if ($(window).scrollTop() >= expBlock4){
 
-        $('.experience__block4').delay(400).animate({
+        $('.experience__block4').delay(500).animate({
                 opacity: 1,
                 left: 0
             }, 'slow'
@@ -96,12 +96,12 @@ $(document).scroll(function () {
 /*animate on scroll info*/
 
 $(document).ready(function () {
-    infoBlock1 = ($('.info1').offset().top) - 800;
-    infoBlock2 = ($('.info2').offset().top) - 800;
-    infoBlock3 = ($('.info3').offset().top) - 800;
-    infoBlock4 = ($('.info4').offset().top) - 800;
-    infoBlock5 = ($('.info5').offset().top) - 800;
-    infoBlock6 = ($('.info6').offset().top) - 800;
+    infoBlock1 = ($('.info1').offset().top) - 700;
+    infoBlock2 = ($('.info2').offset().top) - 700;
+    infoBlock3 = ($('.info3').offset().top) - 700;
+    infoBlock4 = ($('.info4').offset().top) - 700;
+    infoBlock5 = ($('.info5').offset().top) - 700;
+    infoBlock6 = ($('.info6').offset().top) - 700;
 });
 
 $(document).scroll(function () {
@@ -147,7 +147,7 @@ $(document).scroll(function () {
 /*animate feedback-block on scroll*/
 $(window).scroll(function () {
     var scrlFB = $('#feedbackForm').offset().top;
-    var scrlFBAnm = scrlFB - 900;
+    var scrlFBAnm = scrlFB - 650;
     /*$('#feedbackForm').html(scrlFB);*/
 
     if ($(window).scrollTop() >= scrlFBAnm) {

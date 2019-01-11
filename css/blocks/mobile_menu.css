@@ -36,7 +36,7 @@ a{
 
 .menu{
     box-sizing: border-box;
-    width: 100%;
+    width: 80%;
     padding-bottom: 55px;
 
     height: 0;
@@ -64,7 +64,14 @@ a{
 
 .menu__group{
     padding: .5rem 3rem;
-    font-size: 3.2rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu__group2{
+    padding: .3rem 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -81,10 +88,13 @@ a{
 
 /* hamburger */
 
-.hamburger{
-    position: relative;
+.hamburger {
+    position: fixed;
     line-height: 1;
     padding-bottom: .5em;
+    z-index: 100;
+    top: -25px;
+    right: 0;
     display: none;
 }
 
@@ -94,7 +104,6 @@ a{
     height: 100px;
     background-color: darkblue;
     border-radius: 50%;
-
     position: absolute;
     bottom: -55px;
     left: -35px;
@@ -104,7 +113,8 @@ a{
     width: 1.4em;
     height: 1em;
     font-size: 20px;
-
+    top: 35px;
+    left: -10px;
     position: relative;
     text-indent: -9999px;
     z-index: 2;
@@ -191,7 +201,8 @@ LEVEL 3. MOBILE ANIMATION STYLES
 .js-menu_activated .menu{
     will-change: opacity;
     transition-duration: .2s;
-    transition-delay: .3s;
+    transition-delay: .5s;
+    z-index: 100;
 }
 
 .hamburger:before{
