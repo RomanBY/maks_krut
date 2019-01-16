@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon1.ico"/>
     <title>Maks Krut</title>
 
 
@@ -376,20 +375,20 @@
                     <p class="info__text-p pb-4">Let us know what you're looking for in an agency. We'll take a look
                         and see if this could be the start of something beautiful.</p>
                 </div>
-                <form class="col-xl-8 col-lg-10 col-md-12 m-auto justify-content-center text-center d-flex flex-wrap pb-5">
+                <form action="send.php" method="post" class="col-xl-8 col-lg-10 col-md-12 m-auto justify-content-center text-center d-flex flex-wrap pb-5">
                     <div class="col-xl-5 col-sm-5 col-10">
-                        <input type="email" class="form-control formEmail" id="exampleInputEmail1"
+                        <input name="email" type="email" class="form-control formEmail" id="exampleInputEmail1"
                                aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <div class="col-xl-5 col-sm-5 col-10 form-group">
-                        <input type="text" class="form-control formNumber" id="exampleInputNumber"
+                        <input name="phone" type="text" class="form-control formNumber" id="exampleInputNumber"
                                placeholder="Your phone number">
                     </div>
                     <div class="col-10 form-group">
-                        <input type="text" class="form-control formName" id="exampleInputName" placeholder="Your Name">
+                        <input name="fio" type="text" class="form-control formName" id="exampleInputName" placeholder="Your Name">
                     </div>
                     <div class="col-10 form-group">
-                        <input type="text" class="form-control formControl" id="exampleInputComment"
+                        <input name="comment" type="text" class="form-control formControl" id="exampleInputComment"
                                placeholder="Your Comment">
                     </div>
                     <button type="submit" class="btn btn-primary experience__btn formButton">SEND MESSAGE</button>
